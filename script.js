@@ -28,6 +28,13 @@ function openResources(section) {
     ]
   };
 
+  // Safety check: if section not found
+  if (!links[section]) {
+    console.error("No resources found for section:", section);
+    return;
+  }
+
+  // Open all links in new tabs
   links[section].forEach(link => {
     window.open(link, "_blank");
   });
