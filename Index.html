@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Machine Learning Roadmap</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .container {
+            background: white;
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            max-width: 1250px;
+            width: 100%;
+        }
+        
+        svg {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+            
+            .container {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <svg viewBox="0 0 1200 1600" xmlns="http://www.w3.org/2000/svg">
+            <!-- Define gradients and styles -->
+            <defs>
+                <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+                    <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+                </linearGradient>
+                <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" style="stop-color:#f093fb;stop-opacity:1" />
+                    <stop offset="100%" style="stop-color:#f5576c;stop-opacity:1" />
+                </linearGradient>
+                <linearGradient id="grad3" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" style="stop-color:#4facfe;stop-opacity:1" />
+                    <stop offset="100%" style="stop-color:#00f2fe;stop-opacity:1" />
+                </linearGradient>
+                <linearGradient id="grad4" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" style="stop-color:#43e97b;stop-opacity:1" />
+                    <stop offset="100%" style="stop-color:#38f9d7;stop-opacity:1" />
+                </linearGradient>
+                <linearGradient id="grad5" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" style="stop-color:#fa709a;stop-opacity:1" />
+                    <stop offset="100%" style="stop-color:#fee140;stop-opacity:1" />
+                </linearGradient>
+                <linearGradient id="grad6" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" style="stop-color:#30cfd0;stop-opacity:1" />
+                    <stop offset="100%" style="stop-color:#330867;stop-opacity:1" />
+                </linearGradient>
+            </defs>
+            
+            <!-- Title -->
+            <text x="600" y="40" font-size="32" font-weight="bold" text-anchor="middle" fill="#2d3748">
+                Machine Learning Roadmap
+            </text>
+            
+            <!-- Connecting lines -->
+            <line x1="600" y1="120" x2="600" y2="1550" stroke="#cbd5e0" stroke-width="3" stroke-dasharray="5,5"/>
+            
+            <!-- Level 1: Foundations -->
+            <g id="level1">
+                <rect x="400" y="80" width="400" height="60" rx="10" fill="url(#grad1)" opacity="0.9"/>
+                <text x="600" y="115" font-size="20" font-weight="bold" text-anchor="middle" fill="white">
+                    1. Mathematics Foundations
+                </text>
+                
+                <rect x="100" y="170" width="180" height="80" rx="8" fill="#edf2f7" stroke="#667eea" stroke-width="2"/>
+                <text x="190" y="200" font-size="14" font-weight="bold" text-anchor="middle" fill="#2d3748">Linear Algebra</text>
+                <text x="190" y="220" font-size="11" text-anchor="middle" fill="#4a5568">Vectors, Matrices</text>
+                <text x="190" y="235" font-size="11" text-anchor="middle" fill="#4a5568">Eigenvalues</text>
+                
+                <rect x="310" y="170" width="180" height="80" rx="8" fill="#edf2f7" stroke="#667eea" stroke-width="2"/>
+                <text x="400" y="200" font-size="14" font-weight="bold" text-anchor="middle" fill="#2d3748">Calculus</text>
+                <text x="400" y="220" font-size="11" text-anchor="middle" fill="#4a5568">Derivatives</text>
+                <text x="400" y="235" font-size="11" text-anchor="middle" fill="#4a5568">Gradients</text>
+                
+                <rect x="520" y="170" width="180" height="80" rx="8" fill="#edf2f7" stroke="#667eea" stroke-width="2"/>
+                <text x="610" y="200" font-size="14" font-weight="bold" text-anchor="middle" fill="#2d3748">Probability</text>
+                <text x="610" y="220" font-size="11" text-anchor="middle" fill="#4a5568">Distributions</text>
+                <text x="610" y="235" font-size="11" text-anchor="middle" fill="#4a5568">Bayes Theorem</text>
+                
+                <rect x="730" y="170" width="180" height="80" rx="8" fill="#edf2f7" stroke="#667eea" stroke-width="2"/>
+                <text x="820" y="200" font-size="14" font-weight="bold" text-anchor="middle" fill="#2d3748">Statistics</text>
+                <text x="820" y="220" font-size="11" text-anchor="middle" fill="#4a5568">Mean, Variance</text>
+                <text x="820" y="235" font-size="11" text-anchor="middle" fill="#4a5568">Hypothesis Testing</text>
+            </g>
+            
+            <!-- Level 2: Programming -->
+            <g id="level2">
+                <rect x="400" y="290" width="400" height="60" rx="10" fill="url(#grad2)" opacity="0.9"/>
+                <text x="600" y="325" font-size="20" font-weight="bold" text-anchor="middle" fill="white">
+                    2. Programming & Tools
+                </text>
+                
+                <rect x="200" y="380" width="180" height="80" rx="8" fill="#fef5e7" stroke="#f5576c" stroke-width="2"/>
+                <text x="290" y="410" font-size="14" font-weight="bold" text-anchor="middle" fill="#2d3748">Python</text>
+                <text x="290" y="430" font-size="11" text-anchor="middle" fill="#4a5568">NumPy, Pandas</text>
+                <text x="290" y="445" font-size="11" text-anchor="middle" fill="#4a5568">Matplotlib</text>
+                
+                <rect x="410" y="380" width="180" height="80" rx="8" fill="#fef5e7" stroke="#f5576c" stroke-width="2"/>
+                <text x="500" y="410" font-size="14" font-weight="bold" text-anchor="middle" fill="#2d3748">Git & Jupyter</text>
+                <text x="500" y="430" font-size="11" text-anchor="middle" fill="#4a5568">Version Control</text>
+                <text x="500" y="445" font-size="11" text-anchor="middle" fill="#4a5568">Notebooks</text>
+                
+                <rect x="620" y="380" width="180" height="80" rx="8" fill="#fef5e7" stroke="#f5576c" stroke-width="2"/>
+                <text x="710" y="410" font-size="14" font-weight="bold" text-anchor="middle" fill="#2d3748">SQL</text>
+                <text x="710" y="430" font-size="11" text-anchor="middle" fill="#4a5568">Data Querying</text>
+                <text x="710" y="445" font-size="11" text-anchor="middle" fill="#4a5568">Databases</text>
+            </g>
+            
+            <!-- Level 3: Data Processing -->
+            <g id="level3">
+                <rect x="400" y="500" width="400" height="60" rx="10" fill="url(#grad3)" opacity="0.9"/>
+                <text x="600" y="535" font-size="20" font-weight="bold" text-anchor="middle" fill="white">
+                    3. Data Processing
+                </text>
+                
+                <rect x="150" y="590" width="180" height="80" rx="8" fill="#e8f4f8" stroke="#00f2fe" stroke-width="2"/>
+                <text x="240" y="620" font-size="14" font-weight="bold" text-anchor="middle" fill="#2d3748">Data Cleaning</text>
+                <text x="240" y="640" font-size="11" text-anchor="middle" fill="#4a5568">Missing Values</text>
+                <text x="240" y="655" font-size="11" text-anchor="middle" fill="#4a5568">Outliers</text>
+                
+                <rect x="360" y="590" width="180" height="80" rx="8" fill="#e8f4f8" stroke="#00f2fe" stroke-width="2"/>
+                <text x="450" y="620" font-size="14" font-weight="bold" text-anchor="middle" fill="#2d3748">EDA</text>
+                <text x="450" y="640" font-size="11" text-anchor="middle" fill="#4a5568">Visualization</text>
+                <text x="450" y="655" font-size="11" text-anchor="middle" fill="#4a5568">Correlation</text>
+                
+                <rect x="570" y="590" width="180" height="80" rx="8" fill="#e8f4f8" stroke="#00f2fe" stroke-width="2"/>
+                <text x="660" y="620" font-size="14" font-weight="bold" text-anchor="middle" fill="#2d3748">Feature Engineering</text>
+                <text x="660" y="640" font-size="11" text-anchor="middle" fill="#4a5568">Scaling</text>
+                <text x="660" y="655" font-size="11" text-anchor="middle" fill="#4a5568">Encoding</text>
+                
+                <rect x="780" y="590" width="180" height="80" rx="8" fill="#e8f4f8" stroke="#00f2fe" stroke-width="2"/>
+                <text x="870" y="620" font-size="14" font-weight="bold" text-anchor="middle" fill="#2d3748">Data Splitting</text>
+                <text x="870" y="640" font-size="11" text-anchor="middle" fill="#4a5568">Train/Test</text>
+                <text x="870" y="655" font-size="11" text-anchor="middle" fill="#4a5568">Cross-Validation</text>
+            </g>
+            
+            <!-- Level 4: Classical ML -->
+            <g id="level4">
+                <rect x="400" y="710" width="400" height="60" rx="10" fill="url(#grad4)" opacity="0.9"/>
+                <text x="600" y="745" font-size="20" font-weight="bold" text-anchor="middle" fill="white">
+                    4. Classical ML Algorithms
+                </text>
+                
+                <rect x="100" y="800" width="180" height="80" rx="8" fill="#e8f8f5" stroke="#38f9d7" stroke-width="2"/>
+                <text x="190" y="830" font-size="14" font-weight="bold" text-anchor="middle" fill="#2d3748">Regression</text>
+                <text x="190" y="850" font-size="11" text-anchor="middle" fill="#4a5568">Linear, Logistic</text>
+                <text x="190" y="865" font-size="11" text-anchor="middle" fill="#4a5568">Ridge, Lasso</text>
+                
+                <rect x="310" y="800" width="180" height="80" rx="8" fill="#e8f8f5" stroke="#38f9d7" stroke-width="2"/>
+                <text x="400" y="830" font-size="14" font-weight="bold" text-anchor="middle" fill="#2d3748">Tree-Based</text>
+                <text x="400" y="850" font-size="11" text-anchor="middle" fill="#4a5568">Decision Trees</text>
+                <text x="400" y="865" font-size="11" text-anchor="middle" fill="#4a5568">Random Forest</text>
+                
+                <rect x="520" y="800" width="180" height="80" rx="8" fill="#e8f8f5" stroke="#38f9d7" stroke-width="2"/>
+                <text x="610" y="830" font-size="14" font-weight="bold" text-anchor="middle" fill="#2d3748">SVM & KNN</text>
+                <text x="610" y="850" font-size="11" text-anchor="middle" fill="#4a5568">Support Vectors</text>
+                <text x="610" y="865" font-size="11" text-anchor="middle" fill="#4a5568">Nearest Neighbors</text>
+                
+                <rect x="730" y="800" width="180" height="80" rx="8" fill="#e8f8f5" stroke="#38f9d7" stroke-width="2"/>
+                <text x="820" y="830" font-size="14" font-weight="bold" text-anchor="middle" fill="#2d3748">Clustering</text>
+                <text x="820" y="850" font-size="11" text-anchor="middle" fill="#4a5568">K-Means</text>
+                <text x="820" y="865" font-size="11" text-anchor="middle" fill="#4a5568">DBSCAN</text>
+            </g>
+            
+            <!-- Level 5: Evaluation -->
+            <g id="level5">
+                <rect x="400" y="920" width="400" height="60" rx="10" fill="url(#grad5)" opacity="0.9"/>
+                <text x="600" y="955" font-size="20" font-weight="bold" text-anchor="middle" fill="white">
+                    5. Model Evaluation
+                </text>
+                
+                <rect x="200" y="1010" width="180" height="80" rx="8" fill="#fef9e7" stroke="#fee140" stroke-width="2"/>
+                <text x="290" y="1040" font-size="14" font-weight="bold" text-anchor="middle" fill="#2d3748">Metrics</text>
+                <text x="290" y="1060" font-size="11" text-anchor="middle" fill="#4a5568">Accuracy, Precision</text>
+                <text x="290" y="1075" font-size="11" text-anchor="middle" fill="#4a5568">Recall, F1, AUC</text>
+                
+                <rect x="410" y="1010" width="180" height="80" rx="8" fill="#fef9e7" stroke="#fee140" stroke-width="2"/>
+                <text x="500" y="1040" font-size="14" font-weight="bold" text-anchor="middle" fill="#2d3748">Overfitting</text>
+                <text x="500" y="1060" font-size="11" text-anchor="middle" fill="#4a5568">Regularization</text>
+                <text x="500" y="1075" font-size="11" text-anchor="middle" fill="#4a5568">Bias-Variance</text>
+                
+                <rect x="620" y="1010" width="180" height="80" rx="8" fill="#fef9e7" stroke="#fee140" stroke-width="2"/>
+                <text x="710" y="1040" font-size="14" font-weight="bold" text-anchor="middle" fill="#2d3748">Tuning</text>
+                <text x="710" y="1060" font-size="11" text-anchor="middle" fill="#4a5568">Grid Search</text>
+                <text x="710" y="1075" font-size="11" text-anchor="middle" fill="#4a5568">Hyperparameters</text>
+            </g>
+            
+            <!-- Level 6: Advanced ML -->
+            <g id="level6">
+                <rect x="400" y="1130" width="400" height="60" rx="10" fill="url(#grad6)" opacity="0.9"/>
+                <text x="600" y="1165" font-size="20" font-weight="bold" text-anchor="middle" fill="white">
+                    6. Advanced Topics
+                </text>
+                
+                <rect x="100" y="1220" width="180" height="80" rx="8" fill="#e8f4fd" stroke="#330867" stroke-width="2"/>
+                <text x="190" y="1250" font-size="14" font-weight="bold" text-anchor="middle" fill="#2d3748">Ensemble Methods</text>
+                <text x="190" y="1270" font-size="11" text-anchor="middle" fill="#4a5568">XGBoost</text>
+                <text x="190" y="1285" font-size="11" text-anchor="middle" fill="#4a5568">LightGBM</text>
+                
+                <rect x="310" y="1220" width="180" height="80" rx="8" fill="#e8f4fd" stroke="#330867" stroke-width="2"/>
+                <text x="400" y="1250" font-size="14" font-weight="bold" text-anchor="middle" fill="#2d3748">Deep Learning</text>
+                <text x="400" y="1270" font-size="11" text-anchor="middle" fill="#4a5568">Neural Networks</text>
+                <text x="400" y="1285" font-size="11" text-anchor="middle" fill="#4a5568">CNN, RNN</text>
+                
+                <rect x="520" y="1220" width="180" height="80" rx="8" fill="#e8f4fd" stroke="#330867" stroke-width="2"/>
+                <text x="610" y="1250" font-size="14" font-weight="bold" text-anchor="middle" fill="#2d3748">NLP</text>
+                <text x="610" y="1270" font-size="11" text-anchor="middle" fill="#4a5568">Text Processing</text>
+                <text x="610" y="1285" font-size="11" text-anchor="middle" fill="#4a5568">Transformers</text>
+                
+                <rect x="730" y="1220" width="180" height="80" rx="8" fill="#e8f4fd" stroke="#330867" stroke-width="2"/>
+                <text x="820" y="1250" font-size="14" font-weight="bold" text-anchor="middle" fill="#2d3748">Computer Vision</text>
+                <text x="820" y="1270" font-size="11" text-anchor="middle" fill="#4a5568">Image Processing</text>
+                <text x="820" y="1285" font-size="11" text-anchor="middle" fill="#4a5568">Object Detection</text>
+            </g>
+            
+            <!-- Level 7: Deployment -->
+            <g id="level7">
+                <rect x="400" y="1340" width="400" height="60" rx="10" fill="url(#grad1)" opacity="0.9"/>
+                <text x="600" y="1375" font-size="20" font-weight="bold" text-anchor="middle" fill="white">
+                    7. Deployment & Production
+                </text>
+                
+                <rect x="200" y="1430" width="180" height="80" rx="8" fill="#edf2f7" stroke="#667eea" stroke-width="2"/>
+                <text x="290" y="1460" font-size="14" font-weight="bold" text-anchor="middle" fill="#2d3748">Model Serving</text>
+                <text x="290" y="1480" font-size="11" text-anchor="middle" fill="#4a5568">Flask, FastAPI</text>
+                <text x="290" y="1495" font-size="11" text-anchor="middle" fill="#4a5568">Docker</text>
+                
+                <rect x="410" y="1430" width="180" height="80" rx="8" fill="#edf2f7" stroke="#667eea" stroke-width="2"/>
+                <text x="500" y="1460" font-size="14" font-weight="bold" text-anchor="middle" fill="#2d3748">MLOps</text>
+                <text x="500" y="1480" font-size="11" text-anchor="middle" fill="#4a5568">CI/CD</text>
+                <text x="500" y="1495" font-size="11" text-anchor="middle" fill="#4a5568">Monitoring</text>
+                
+                <rect x="620" y="1430" width="180" height="80" rx="8" fill="#edf2f7" stroke="#667eea" stroke-width="2"/>
+                <text x="710" y="1460" font-size="14" font-weight="bold" text-anchor="middle" fill="#2d3748">Cloud Platforms</text>
+                <text x="710" y="1480" font-size="11" text-anchor="middle" fill="#4a5568">AWS, GCP</text>
+                <text x="710" y="1495" font-size="11" text-anchor="middle" fill="#4a5568">Azure ML</text>
+            </g>
+            
+            <!-- Arrows -->
+            <polygon points="590,140 600,160 610,140" fill="#cbd5e0"/>
+            <polygon points="590,350 600,370 610,350" fill="#cbd5e0"/>
+            <polygon points="590,560 600,580 610,560" fill="#cbd5e0"/>
+            <polygon points="590,770 600,790 610,770" fill="#cbd5e0"/>
+            <polygon points="590,980 600,1000 610,980" fill="#cbd5e0"/>
+            <polygon points="590,1190 600,1210 610,1190" fill="#cbd5e0"/>
+            <polygon points="590,1400 600,1420 610,1400" fill="#cbd5e0"/>
+            
+            <!-- Start marker -->
+            <circle cx="600" cy="70" r="15" fill="#48bb78" stroke="white" stroke-width="3"/>
+            <text x="600" y="76" font-size="18" font-weight="bold" text-anchor="middle" fill="white">START</text>
+            
+            <!-- End marker -->
+            <circle cx="600" cy="1540" r="15" fill="#f56565" stroke="white" stroke-width="3"/>
+            <text x="600" y="1575" font-size="14" font-weight="bold" text-anchor="middle" fill="#2d3748">Keep Learning!</text>
+        </svg>
+    </div>
+</body>
+</html>
